@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Food Menu</title>
+</head>
+
+<body>
+
+<h1>Food Menu</h1>
+
+{% for food in foods %}
+
+<p>
+{{food.name}} - ₹{{food.price}}
+
+<a href="/order/{{food.id}}">
+Order Now
+</a>
+
+</p>
+
+{% endfor %}
+
+</body>
+
+</html>
